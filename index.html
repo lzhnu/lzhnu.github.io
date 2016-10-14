@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="ch-zh">
+<head>
+    <meta charset="UTF-8">
+    <title>Lzh。</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="normalize.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <!--[if lt IE 9]><script src="//cdn.bootcss.com/html5shiv/r29/html5.js"></script><![endif]-->
+    <style>
+        html,body{overflow: hidden; }
+    </style>
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+    <div class="wrapper">
+        <div class="main" id="main">
+        	<h1><strong>Lzh。</strong></h1>
+        	<ul>
+                <li>
+                    <a href="http://nexy.me" target="_blank">博客</a>
+                </li>
+				<li>
+                    <a href="http://cv.nexy.me" target="_blank">简历</a>
+                </li>
+
+        		<li>
+        			<a href="http://github.com/lzhnu" target="_blank">Github</a>
+        		</li>
+        	</ul>
+        </div>
+    </div>
+    <div class="footer">
+    	<p>&copy; <a href="http://nexy.me" target="_blank">Lzh。</a><span class="spe">/</span>Powered by <a href="http://nexy.me" target="_blank">liuzehui</a></p>
+    </div>
+<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+    <script src="canvas.js"></script>
+    <script>
+    	window.onload = function(){
+    		var main = document.getElementById('main');
+    		main.style.marginLeft = - main.offsetWidth / 2 + 'px';
+    		main.style.marginTop = - main.offsetHeight / 2 + 'px';
+            main.style.top = document.documentElement.clientHeight * 0.382 + 'px';
+    	};
+        window.onresize = function(){
+            main.style.top = document.documentElement.clientHeight * 0.382 + 'px';
+        };
+    </script>
+</body>
+</html>
